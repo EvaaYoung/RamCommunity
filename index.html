@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To RamCommunity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .credit {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        .video-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links</h1>
+    <div class="button-container">
+        <button onclick="redirectToLink(1)">The Owner</button>
+        <button onclick="redirectToLink(2)">The Owner Of This Website</button>
+        <button onclick="redirectToLink(3)">RamCommunity Discord</button>
+        <button onclick="redirectToLink(4)">IG Owner</button>
+        <button onclick="redirectToLink(5)">IG Owner Website</button>
+    </div>
+
+    <div class="video-container">
+        <h2>Video Demo</h2>
+        <video width="600" controls>
+            <source src="videoplayback.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video.
+        </video>
+    </div>
+
+    <div class="credit">Credit : EvaaYoung </div>
+
+    <script>
+        function redirectToLink(number) {
+            const links = {
+                1: 'https://www.youtube.com/@syahramsamp',
+                2: 'https://www.youtube.com/@EVYoung9',
+                3: 'https://discord.gg/jBChuBuT',
+                4: 'https://www.instagram.com/syahramahram',
+                5: 'https://www.instagram.com/fahmimooo_'
+            };
+            window.location.href = links[number];
+        }
+    </script>
+</body>
+</html>
